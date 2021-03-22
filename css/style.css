@@ -60,12 +60,8 @@ nav {
 }
 
 .nav-wrapper .brand-logo {
-	text-shadow: 0 0 5px #d6b931, 
-                0 0 15px #d6b931, 0 0 20px #d6b931, 
-                0 0 40px #d6b931, 0 0 60px #1a4d17, 
-                0 0 10px #eaeaea, 0 0 98px #1a4d17;
 	font-family: 'Pacifico', 'Arial Narrows', 'arial' , sans-serif;
-	animation: neonEffect 6s infinite;
+	
 }
 
 .sidenav {
@@ -81,62 +77,13 @@ nav {
 }
 
 .sidenav .brand-logo {
-	text-shadow: 0 0 5px #d6b931, 
-                0 0 15px #d6b931, 0 0 20px #d6b931, 
-                0 0 40px #d6b931, 0 0 60px #1a4d17, 
-                0 0 10px #eaeaea, 0 0 98px #1a4d17;
+  color: #eaeaea;
 	font-family: 'Pacifico', 'Arial Narrows', 'arial' , sans-serif;
 	font-size: 24px;
-	animation: neonEffect 6s infinite;
+	
 }
 
-@-webkit-keyframes neonEffect {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
 
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-  text-shadow:0 0 5px #d6b931, 
-              0 0 15px #d6b931, 0 0 20px #d6b931, 
-              0 0 40px #d6b931, 0 0 60px #1a4d17, 
-              0 0 10px #eaeaea, 0 0 98px #1a4d17;
-    color: #eaeaea;
-  }
-}
-
-@keyframes neonEffect {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-  text-shadow:0 0 5px #d6b931, 
-              0 0 15px #d6b931, 0 0 20px #d6b931, 
-              0 0 40px #d6b931, 0 0 60px #1a4d17, 
-              0 0 10px #eaeaea, 0 0 98px #1a4d17;
-    color: #eaeaea;
-  }
-}
 /*end header*/
 
 
