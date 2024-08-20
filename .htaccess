@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Mengarahkan /index.html#home ke /home
+RewriteCond %{THE_REQUEST} /index\.html#home [NC]
+RewriteRule ^index\.html#home$ /home [R=301,L]
+RewriteRule ^home/?$ index.html#home [L]
+
+# Mengarahkan /index.html#project ke /project
+RewriteCond %{THE_REQUEST} /index\.html#project [NC]
+RewriteRule ^index\.html#project$ /project [R=301,L]
+RewriteRule ^project/?$ index.html#project [L]
+
+# Mengarahkan /index.html#contact ke /contact
+RewriteCond %{THE_REQUEST} /index\.html#contact [NC]
+RewriteRule ^index\.html#contact$ /contact [R=301,L]
+RewriteRule ^contact/?$ index.html#contact [L]
+
+
+
+
