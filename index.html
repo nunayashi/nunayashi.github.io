@@ -374,5 +374,12 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      if (window.location.hash === "#project") {
+        window.location.href =
+          window.location.origin + window.location.pathname;
+      }
+    </script>
   </body>
 </html>
