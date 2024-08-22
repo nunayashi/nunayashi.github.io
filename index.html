@@ -39,7 +39,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#home" class="nav__logo">
+        <a href="#home" class="nav__logo homeLink">
           <img
             class="icon_profil"
             src="assets/img/icon.png"
@@ -52,13 +52,13 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link homeLink active-link">Home</a>
             </li>
             <li>
-              <a href="#project" class="nav__link">Project</a>
+              <a href="#project" class="nav__link projectLink">Project</a>
             </li>
             <li>
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link contactLink">Contact</a>
             </li>
           </ul>
 
@@ -94,7 +94,7 @@
               offer to contribute to advancing your company.
             </p>
 
-            <a href="#project" class="home__button">Explore</a>
+            <a href="#project" class="home__button projectLink">Explore</a>
 
             <img
               src="assets/img/lantern-1.svg"
@@ -315,11 +315,11 @@
 
           <ul class="footer__links">
             <li>
-              <a href="#project" class="footer__link">Project</a>
+              <a href="#project" class="footer__link projectLink">Project</a>
             </li>
 
             <li>
-              <a href="#contact" class="footer__link">Contact</a>
+              <a href="#contact" class="footer__link contactLink">Contact</a>
             </li>
           </ul>
 
@@ -357,7 +357,7 @@
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-    <a href="#home" class="scrollup" id="scroll-up">
+    <a href="#home" class="scrollup homeLink" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
@@ -374,12 +374,5 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-
-    <script>
-      if (window.location.hash === "#project") {
-        window.location.href =
-          window.location.origin + window.location.pathname;
-      }
-    </script>
   </body>
 </html>

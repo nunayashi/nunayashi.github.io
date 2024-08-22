@@ -155,3 +155,40 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+// REMOVE URL #
+// Function to change the URL to the base URL
+function removeHash() {
+  window.history.replaceState(null, null, window.location.pathname);
+}
+
+// Event listeners for the links
+document
+  .getElementsByClassName("homeLink")
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    removeHash();
+  });
+
+document
+  .getElementsByClassName("projectLink")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    removeHash();
+  });
+
+document
+  .getElementsByClassName("contactLink")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    removeHash();
+  });
+
+// Check if URL has a hash and remove it on page load
+if (
+  window.location.hash === "#home" ||
+  window.location.hash === "#project" ||
+  window.location.hash === "#contact"
+) {
+  removeHash();
+}
